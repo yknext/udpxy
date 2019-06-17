@@ -162,13 +162,13 @@ static const char RST_PAGE_FMT1[] =
 static const char* ACLIENT_TABLE[] = {
     "<h3>Active clients:</h3>\n"
     "<table cellspacing=\"0\" class=\"proctabl\">\n"
-    "<tr><th>Process ID</th><th>Source</th><th>Destination</th><th>Throughput</th></tr>\n",
+    "<tr><th>Process ID</th><th>Source</th><th>X-Forward-For</th><th>Destination</th><th>Throughput</th></tr>\n",
     "</table>\n" };
 
 
 static const char* ACLIENT_REC_FMT[] = {
-    "<tr><td>%d</td><td>%s:%d</td><td>%s:%d%s</td><td>%s</td></tr>\n",
-    "<tr class=\"uneven\"><td>%d</td><td>%s:%d</td><td>%s:%d%s</td><td>%s</td></tr>\n" };
+    "<tr><td>%d</td><td>%s:%d</td><td>%s:%d</td><td>%s:%d%s</td><td>%s</td></tr>\n",
+    "<tr class=\"uneven\"><td>%d</td><td>%s:%d</td><td>%s:%d</td><td>%s:%d%s</td><td>%s</td></tr>\n" };
 
 
 static const char REDIRECT_SCRIPT_FMT[] =
@@ -196,4 +196,3 @@ static const char REQUEST_GUIDE[] =
 #endif /* STATPG_H_0110081157_ */
 
 /* __EOF__ */
-
